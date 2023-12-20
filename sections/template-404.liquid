@@ -1,0 +1,68 @@
+<div class="max-w-md">
+  <!-- If you want to use an image -->
+  {% if section.settings.img != blank %}
+    <div class="flex justify-center">
+      <img
+        src="{{ section.settings.img | img_url: 'master' }}"
+        alt="{{ section.settings.title }}"
+        class="h-[100px] w-auto md:h-[120px]">
+    </div>
+  {% else %}
+    <div class="text-5xl font-bold my-4">
+      {{ section.settings.title }}
+    </div>
+  {% endif %}
+
+  <div class="my-5 text-sm px-3 md:px-0 md:text-lg text-gray-500 font-bold">
+    <p class="leading-normal">{{ section.settings.subtext_title }}</p>
+  </div>
+  <div class="my-4">
+    {% if section.settings.button_url == blank %}
+      {% assign shop_url = shop.secure_url %}
+    {% else %}
+      {% assign shop_url = section.settings.button_url %}
+    {% endif %}
+    <a href="{{ shop_url }}" class="bg-[#de953e] text-white px-4 py-2 inline text-sm md:text-base rounded font-medium shadow hover:bg-gray-900">{{ section.settings.button_label }}</a>
+  </div>
+
+</div>
+
+
+{% schema %}
+  {
+    "name": "Template 404",
+    "tag": "section",
+    "class": "flex items-center justify-center text-center py-7 h-screen",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image",
+        "info": "The image should be..."
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading Title",
+        "default": "404"
+      },
+      {
+        "type": "richtext",
+        "id": "subtext_title",
+        "label": "Subtext",
+        "default": "<p>Sorry, the page you are looking for cannot be found.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label",
+        "default": "Back to Homepage"
+      }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button URL",
+        "default": "/"
+      }
+    ]
+  }
+{% endschema %}
