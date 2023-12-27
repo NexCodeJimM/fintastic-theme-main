@@ -8,21 +8,22 @@ The FIN-TASTIC Shopify Theme is a sleek and modern e-commerce theme designed spe
 
 ## Features
 
-| Status             | Description             |
-| ------------------ | ----------------------- |
-| :white_check_mark: | Logo Upload             |
-| :white_check_mark: | Navigational Bar        |
-| :white_check_mark: | 404 Page                |
-| :white_check_mark: | Article Page            |
-| :x:                | Blog Page               |
-| :x:                | Cart Page               |
-| :x:                | Product Collection Page |
-| :x:                | Collections Page        |
-| :x:                | Homepage (Index)        |
-| :x:                | Pages (About & Contact) |
-| :x:                | Advanced Product Page   |
-| :x:                | Search Page             |
-| :hourglass:        | More Features to come   |
+| Status                      | Description             |
+| --------------------------- | ----------------------- |
+| :white_check_mark: **DONE** | Brand Customization     |
+| :white_check_mark: **DONE** | Navigation Bar          |
+| :white_check_mark: **DONE** | 404 Page                |
+| :white_check_mark: **DONE** | Article Page            |
+| :wrench: **IN PROGRESS**    | Blog Page               |
+| :x: **NOT STARTED**         | Cart Page               |
+| :x: **NOT STARTED**         | Product Collection Page |
+| :x: **NOT STARTED**         | Collections Page        |
+| :x: **NOT STARTED**         | Homepage (Index)        |
+| :x: **NOT STARTED**         | Pages (About & Contact) |
+| :x: **NOT STARTED**         | Advanced Product Page   |
+| :x: **NOT STARTED**         | Search Page             |
+| :x: **NOT STARTED**         | Policy Page             |
+| :hourglass:                 | More Features to come   |
 
 ## How to use
 
